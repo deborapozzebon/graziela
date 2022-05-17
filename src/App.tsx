@@ -15,7 +15,6 @@ function App() {
                 <a href='https://www.instagram.com/grazielamatana/' target='_blank'>
                     <img src={instagram} alt="imagem de logo" />
                 </a>
-
                 <a href='https://api.whatsapp.com/send?phone=54992032963'>
                     <img src={whatsapp} alt="imagem de logo" />
                 </a>
