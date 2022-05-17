@@ -1,7 +1,7 @@
 import logo from './assets/logo.png'
 import instagram from './assets/instagram.svg'
 import whatsapp from './assets/whatsapp.svg'
-import './app.css';
+import './App.css';
 
 function App() {
     return (
