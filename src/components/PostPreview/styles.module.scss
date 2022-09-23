@@ -1,0 +1,35 @@
+.postPreview {
+  height: 100%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h3 {
+    padding: 15px 0;
+    color: var(--green-500);
+    font-size: 25px;
+  }
+
+  .top_content {
+    display: flex;
+    flex-direction: column;
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  .bottom_content {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    .date {
+      font-size: 13px;
+    }
+  }
+
+  padding-bottom: 20px;
+}

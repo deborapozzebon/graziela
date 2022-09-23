@@ -1,0 +1,36 @@
+.post {
+  padding: 120px 0;
+
+  @media(max-width:950px) {
+    padding: 30% 20px;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: var(--pink-500);
+
+    @media(max-width:950px) {
+      font-size: 25px;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: var(--pink-500);
+  }
+
+  p {
+    padding-top: 10px;
+  }
+
+  img {
+    border-radius: 50px;
+    max-height: 400px;
+
+    @media (max-width: 950px) {
+      border-radius: 20px;
+    }
+  }
+}
