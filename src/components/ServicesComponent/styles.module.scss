@@ -6,7 +6,7 @@
   align-items: baseline;
   background-color: var(--yellow-100);
   padding-left: 28px;
-  h2 {
+  h1 {
     padding-top: 35px;
     font-size: 50px;
     font-weight: 700;
@@ -59,7 +59,7 @@
   .service {
     padding: 0 23px;  
 
-    h2 {
+    h1 {
       font-size: 40px;
     }
 
@@ -71,7 +71,7 @@
 
 @media only screen and (max-width: 540px) {
   .service {
-    h2 {
+    h1 {
       font-size: 26px;
     }
 
@@ -87,7 +87,7 @@
 
 @media only screen and (max-width: 414px) {
   .service {
-    h2 {
+    h1 {
       font-size: 26px;
     }
 
