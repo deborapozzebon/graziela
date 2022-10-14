@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function ServicesComponent() {
   return (
     <div className={styles.service}>
-      <h2>Serviços</h2>
+      <h1>Serviços</h1>
       <span className={styles.subtitle}>Esses são os serviços prestados: </span>
       <div className={styles.grid}>
         <ServiceGridComponent title="Contratos">

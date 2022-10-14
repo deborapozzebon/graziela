@@ -94,65 +94,45 @@
   .rights {
     color: var(--white);
     font-size: 13px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
   }
 }
 
-
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1024px) {
   .footer {
     .principal {
+      padding: 30px 0 30px 50px;
       .social {
-        display: flex;
-        flex-direction: column;
-        img {
-          display: none;
-        }
-
-        span {
-          display: none;
-        }
-
-        .buttons {
-          display: none;
-        }
-      }
-
-      .menus {
-        // padding-left: 100px;
-        .links {
-          display: flex;
-          align-items: flex-start;
-        }
-      }
-      
-    }
-    .rights {
-      padding-left: 100px;
-      text-align: left;
-    }
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .footer {
-    width: 100%;
-    margin-top: 15%;
-    height: 50%;
-
-    .principal {
-      .social {
-        padding-left: 50px;
+        display: none;
       }
 
       .contact {
         padding-right: 50px;
       }
-    }
 
-    .rights {
+      .menus {
+        .links {
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .footer {
+    .principal {      
       padding: 25px 50px;
+      .contact {
+        display: none;
+      }
+    }
+    
+    .rights {
+      text-align: left;
+      padding-left: 50px;
     }
   }
 }
@@ -160,55 +140,15 @@
 @media only screen and (max-width: 540px) {
   .footer {
     .principal {
-      .contact {
-        padding-left: 0px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  .footer {
-    .principal {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      .menus {
-        .links {
-          font-size: 14px;
-        }
-      }
-
-      .contact {
-        padding-left: 220px;
-      }
-    }
-
-    .rights {
-      padding: 25px 90px;
-    }
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .footer {
-    .principal {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      .menus {
-        .links {
-          font-size: 14px;
-        }
-      }
-
+      padding-left: 50px;
       .contact {
         display: none;
       }
     }
-
+    
     .rights {
-      padding: 25px 50px;
+      text-align: left;
+      padding-left: 50px;
     }
   }
 }

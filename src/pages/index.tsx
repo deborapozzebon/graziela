@@ -21,23 +21,25 @@ export default function Home() {
         <meta name="og:site_name" property="og:site_name" content="Graziela Matana Advocacia" />
         <meta name="og:image" property="og:image" content="./favicon.png" />
         <link rel="shortcut icon" href="./favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.scroll}>
         <section id="home" className={styles.home}>
           <HomeComponent />
         </section>
-        <section id="about" className={styles.about}>
+        <section id="sobre-mim" className={styles.about}>
           <AboutComponent />
         </section>
-        <section id="services" className={styles.services}>
+        <section id="servicos" className={styles.services}>
           <ServicesComponent />
         </section>
-        <section id="contact" className={styles.contact}>
+        <section id="contato" className={styles.contact}>
           <ContactComponent />
         </section>
+        {/* o site não terá mais newsletter, no futuro vai ser um "baixe o ebook" num formato parecido
         <section id="newsletter" className={styles.newsletter}>
           <Newsletter />
-        </section>
+        </section> */}
         <Footer />
       </div>
     </>

@@ -34,25 +34,36 @@
       align-items: flex-start;
 
       .title {
-       padding-left: 0;
+       padding: 50px 0 15px 0;
+       font-size: 26px;
       }
 
       .content {
         display: flex;
         text-align: left;
+        font-size: 18px;
       }
     }
   }
 }
 
+@media only screen and (max-width: 690px) {
+  .serviceGridItem {
+    padding: 0;
+  }
+}
+
+
 @media only screen and (max-width: 540px) {
   .serviceGridItem {
-    .title {
-      font-size: 26px;
-    }
-
-    .content {
-      font-size: 16px;
+    .contentService {
+      .title {
+        font-size: 24px;
+      }
+  
+      .content {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -61,8 +72,7 @@
   .serviceGridItem {
     height: 50%;
     .title {
-      font-size: 23px;
-      padding: 30px 0 12px;
+      font-size: 22px;
     }
 
     .content {

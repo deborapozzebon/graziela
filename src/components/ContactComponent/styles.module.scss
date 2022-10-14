@@ -153,13 +153,56 @@
       p {
         font-size: 22px;
       }
+
+      button {
+        width: 50%;
+      }
     }
     
     .right {
       width: 100%;
       display: flex;
+      .form {
+        button {
+          background-color: var(--pink-500);
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .both {
+    .left {  
+      padding: 50px;
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
       button {
-        background-color: var(--pink-500);
+        width: 100%;
+      }
+    }
+    
+    .right {  
+      display: flex;
+      justify-content: center;
+      .form {
+        input {
+          width: 400px;
+        }
+        button {
+          background-color: var(--pink-500);
+        }
       }
     }
   }
@@ -168,8 +211,7 @@
 @media only screen and (max-width: 540px) {
   .both {
     .left {  
-      padding: 50px;
-      padding-top: 100px;
+      padding: 100px 50px;
       h2 {
         font-size: 32px;
       }
@@ -190,11 +232,10 @@
   }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 460px) {
   .both {
     .left {  
-      padding: 50px 90px;
-      padding-top: 100px;
+      padding: 50px;
       h2 {
         font-size: 28px;
       }
@@ -209,46 +250,51 @@
     }
     
     .right {  
-      display: flex;
-      justify-content: flex-start;
-      padding-left: 80px;
       .form {
         input {
-          width: 400px;
-        }
-        button {
-          background-color: var(--pink-500);
+          width: 290px;
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .both {
-    .left {  
-      padding: 50px;
-      padding-top: 100px;
-      h2 {
-        font-size: 28px;
-      }
-
-      span {
-        font-size: 17px;
-      }
-
-      p {
-        font-size: 17px;
-      }
+@media only screen and (max-width: 370px) {
+.both {
+  .left { 
+    h2 {
+      padding-top: 6px;
+      font-size: 22px;
     }
-    
+
+    span {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+}
+}
+
+@media only screen and (max-width: 340px) {
+  .both {    
     .right {  
-      padding-left: 40px;
       .form {
+        label {
+          font-size: 16px;
+        }
+
         input {
-          width: 290px;
+          width: 240px;
         }
         button {
+          font-size: 16px;
           background-color: var(--pink-500);
         }
       }
