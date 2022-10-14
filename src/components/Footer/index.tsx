@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
 import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -19,18 +20,18 @@ export default function Footer() {
         </div>
         <div className={styles.menus}>
           <div className={styles.links}>
-            <p><a>Blog</a></p>
-            <p><a href='#contact'>Contato</a></p>
-            <p><a>Termos de Uso</a></p>
-            <p><a>Política de Privacidade</a></p>
+            <p><Link href='blog'>Blog</Link></p>
+            <p><Link href='/#contato'>Contato</Link></p>
+            <p><Link href='/legal/termos-de-uso'>Termos de Uso</Link></p>
+            <p><Link href='/legal/politica-de-privacidade'>Política de Privacidade</Link></p>
           </div>
         </div>
         <div className={styles.contact}>
-          <span>sinta-se a vontade para</span>
+          <span>Sinta-se à vontade para</span>
           <h4>entrar em contato</h4>
           <p><a href="https://api.whatsapp.com/send?phone=54991119962">(54) 99111-9962</a></p>
           <p><a href="mailto:ola@grazielamatanaadvocacia.com.br">grazielamatana@gmail.com</a></p>
-          <button><a href="https://api.whatsapp.com/send?phone=54991119962">Me chama!</a></button>
+          <button><a href="https://api.whatsapp.com/send?phone=54991119962">Entre em contato</a></button>
         </div>
       </div>
       <p className={styles.rights}>Todos os direitos reservados Graziela Matana © 2022</p>

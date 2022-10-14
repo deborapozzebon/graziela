@@ -1,18 +1,3 @@
-.scroll {
-  overflow: auto; 
-  ::-webkit-scrollbar {
-      width:7px;
-  }
-  ::-webkit-scrollbar-track {
-      background:#C4C4C4;
-      border-radius:16px
-  }
-  ::-webkit-scrollbar-thumb {
-      background:#FC3C8D;
-      border-radius:16px
-  }
-}
-
 .home {
   width: 100%;
   height: 100vh;

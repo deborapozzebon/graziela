@@ -6,7 +6,7 @@ export default function ContactComponent() {
     <>
       <div className={styles.both}>
         <div className={styles.left}>
-          <span>Sinta-se a vontade para</span>
+          <span>Sinta-se à vontade para</span>
           <h2>entrar em contato</h2>
           <p><a href="https://api.whatsapp.com/send?phone=54991119962">(54) 99111-9962</a></p>
           <p><a href="mailto:grazielamatana@gmail.com">grazielamatana@gmail.com</a></p>
@@ -19,7 +19,7 @@ export default function ContactComponent() {
               <AiFillLinkedin color='#FFFFFF' />
             </a>
           </div>
-          <button><a href="https://api.whatsapp.com/send?phone=54991119962">Me chama!</a></button>
+          <button><a href="https://api.whatsapp.com/send?phone=54991119962">Entre em contato</a></button>
         </div>
         <div className={styles.right}>
           <form className={styles.form}>

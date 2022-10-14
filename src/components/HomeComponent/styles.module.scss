@@ -47,7 +47,7 @@
   .homeContent {
     .left {  
       h1 {
-        font-size: 36px;
+        font-size: 40px;
       }
     
       span {
@@ -97,7 +97,7 @@
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 950px) {
   .homeContent {
     width: 100%;
     
@@ -107,11 +107,15 @@
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .homeContent {    
+@media only screen and (max-width: 540px) {
+  .homeContent {
+    width: 100%;
+    
     .left {
+      padding-left: 50px;
+
       h1 {
-        font-size: 25px;
+        font-size: 26px;
       }
 
       span {

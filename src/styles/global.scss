@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
-// *::-webkit-scrollbar {
-//   width: 12px;
-// }
+::-webkit-scrollbar {
+  width: 12px;
+}
 
-// *::-webkit-scrollbar-track {
-//   background:  #CC6F84;
-// }
+::-webkit-scrollbar-track {
+  background-color: var(--yellow-100); 
+  border-radius: 10px;
+}
 
-// *::-webkit-scrollbar-thumb {
-//   background-color: #965060;
-//   border-radius: 20px;
-//   border: 3px transparent;
-// }
+::-webkit-scrollbar-thumb {
+  background: var(--pink-500); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-500); 
+}
 
 html {
   scroll-behavior: smooth;

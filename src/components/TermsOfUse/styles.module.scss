@@ -1,0 +1,46 @@
+.termsContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-top: 10%;
+
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--pink-500);
+  }
+
+  .update {
+    font-weight: 600;
+  }
+
+  .welcome {
+    margin: 35px 0 20px 0;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .myTerms {
+    width: 95%;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .allTerms {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 10%;
+
+    .subtitle {
+      font-size: 24px;
+      margin: 25px 0 10px 0;
+    }
+
+    .term {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

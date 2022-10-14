@@ -27,12 +27,12 @@ export default function HeaderComponent() {
               </Link>
             </li>
             <li>
-              <Link href="/#about">
+              <Link href="/#sobre-mim">
                 <a onClick={closeMenu}>Sobre mim</a>
               </Link>
             </li>
             <li>
-              <Link href="/#services">
+              <Link href="/#servicos">
                 <a onClick={closeMenu}>Serviços</a>
               </Link>
             </li>
@@ -42,7 +42,7 @@ export default function HeaderComponent() {
               </Link>
             </li>
             <li>
-              <Link href="/#contact">
+              <Link href="/#contato">
                 <a onClick={closeMenu}>Contato</a>
               </Link>
             </li>
