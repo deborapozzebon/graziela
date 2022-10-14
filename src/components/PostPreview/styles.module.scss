@@ -10,6 +10,13 @@
     padding: 15px 0;
     color: var(--green-500);
     font-size: 25px;
+    &.displayAuthor {
+      font-size: 18px;
+    }
+  }
+
+  p.displayAuthor {
+    font-size: 15px;
   }
 
   .top_content {

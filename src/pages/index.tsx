@@ -1,14 +1,17 @@
-import AboutComponent from "../components/AboutComponent";
-import ContactComponent from "../components/ContactComponent";
-import Footer from "../components/Footer";
-import HomeComponent from "../components/HomeComponent";
-import Newsletter from "../components/Newsletter";
-import ServicesComponent from "../components/ServicesComponent";
-import Head from "next/head";
+import { createClient } from '@prismicio/client';
+import Head from 'next/head';
 
+import AboutComponent from '../components/AboutComponent';
+import BlogComponent from '../components/BlogComponent';
+import ContactComponent from '../components/ContactComponent';
+import Footer from '../components/Footer';
+import HomeComponent from '../components/HomeComponent';
+import Newsletter from '../components/Newsletter';
+import ServicesComponent from '../components/ServicesComponent';
+import { Prismic } from '../interfaces/GeneralInterfaces';
 import styles from './home.module.scss';
 
-export default function Home() {
+export default function Home({ posts }: Prismic) {
   return (
     <>
       <Head>
@@ -33,6 +36,9 @@ export default function Home() {
         <section id="servicos" className={styles.services}>
           <ServicesComponent />
         </section>
+        <section id="blog" className={styles.blog}>
+          <BlogComponent posts={posts}/>
+        </section>
         <section id="contato" className={styles.contact}>
           <ContactComponent />
         </section>
@@ -44,4 +50,24 @@ export default function Home() {
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const client = createClient("https://grazi.prismic.io/api/v2")
+  const posts = await client.getByType('post', {
+    orderings: [
+      {
+        field: 'document.first_publication_date',
+        direction: 'desc',
+      }
+    ],
+    pageSize: 4
+  })
+
+  return {
+    props: {
+      posts: posts,
+    },
+    revalidate: 60
+  }
 }

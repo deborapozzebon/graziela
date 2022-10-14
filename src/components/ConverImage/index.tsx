@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import { PrismicNextImage } from '@prismicio/next';
 import Link from 'next/link'
 
-export default function CoverImage({ title, field, slug, withLink = true }) {
+export default function CoverImage({ title, field, slug, withLink = true, maxHeight = false }) {
   const image = (
     <PrismicNextImage
       field={field}

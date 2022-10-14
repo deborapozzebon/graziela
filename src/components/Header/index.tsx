@@ -37,7 +37,7 @@ export default function HeaderComponent() {
               </Link>
             </li>
             <li>
-              <Link href="/blog">
+              <Link href="/#blog">
                 <a onClick={closeMenu}>Blog</a>
               </Link>
             </li>

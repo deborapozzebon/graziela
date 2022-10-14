@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 import Link from 'next/link'
 import * as prismicH from '@prismicio/helpers'
 
-export default function PostPreview({ title, slug, coverimage, date, covercontent }: PostPreviewData) {
+export default function PostPreview({ title, slug, coverimage, date, covercontent, displayAuthor = true }: PostPreviewData) {
   return (
     <div className={styles.postPreview}>
       <div className={styles.top_content}>
@@ -12,18 +12,19 @@ export default function PostPreview({ title, slug, coverimage, date, coverconten
           title={title}
           slug={slug}
           field={coverimage}
+          maxHeight={displayAuthor}
         />
-        <h3>
+        <h3 className={displayAuthor ? '': styles.displayAuthor}>
           <Link href={`/blog/${slug}`}>
             {title}
           </Link>
         </h3>
-        <p>{covercontent}</p>
+        <p className={displayAuthor ? '': styles.displayAuthor}>{covercontent}</p>
       </div>
-      <div className={styles.bottom_content}>
+      {displayAuthor && <div className={styles.bottom_content}>
         <p className={styles.date}>{prismicH.asDate(date).toLocaleDateString()}</p>
         <p className={styles.author}>Por Graziela Matana</p>
-      </div>
+      </div>}
     </div>
   )
 }

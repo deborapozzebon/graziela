@@ -52,6 +52,7 @@ interface PostPreviewData {
   slug: string
   covercontent: string
   date: any
+  displayAuthor: boolean
 }
 
 export type {

@@ -22,6 +22,7 @@ export default function Blog({ posts }: Prismic) {
                       coverimage={post.data.coverimage}
                       date={post.first_publication_date}
                       covercontent={post.data.covercontent}
+                      displayAuthor={true}
                     />
                   </li>
                 )
