@@ -1,6 +1,9 @@
 .blogContent {
   width: 90%;
   padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   h2 {
     padding: 35px 0;
     font-size: 50px;
@@ -28,6 +31,7 @@
     color: var(--pink-500);
     font-size: 16px;
     font-weight: 800;
+    max-width: 200px;
 
     transition: 0.2s;
     &:hover {
@@ -39,6 +43,9 @@
 
 @media (max-width: 1440px) {
   .blogContent {
+    h2 {
+      font-size: 35px;
+    }
     padding: 0 50px;
     .others_articles {
       ul {
@@ -61,6 +68,9 @@
 
 @media (max-width: 750px) {
   .blogContent {
+    h2 {
+      font-size: 26px;
+    }
     .others_articles {
       ul {
         display: grid;
