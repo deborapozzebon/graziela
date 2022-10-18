@@ -5,23 +5,75 @@ export default function PrivacyPolicyComponent() {
     <>
     <div className={styles.privacyContent}>
       <h1 className={styles.title}>Política de Privacidade</h1>
-      <span className={styles.update}>Última atualização em: 29/09/2022</span>
       <span className={styles.welcome}>Olá! Seja bem-vindo(a)!</span>
-      <span className={styles.myTerms}>Essas são as políticas de privacidade!</span>
-      {/* <span>Saiba que estou sempre disponível para tirar qualquer dúvida que você tenha pelo <a href="mailto:ola@grazielamatanaadvocacia.com.br">grazielamatana@gmail.com</a>, pelo canal <a href="contact">entre em contato</a> disponível no site e pelo telefone <a href="https://api.whatsapp.com/send?phone=54991119962">(54) 99111-9962.</a></span> */}
+      <span className={styles.myTerms}>Essas são as políticas de privacidade:</span>
       <div className={styles.allTerms}>     
-        <h2 className={styles.subtitle}>POLÍTICA DE PRIVACIDADE: /////////ALTERAR</h2>
-        <span className={styles.term}><b>1)</b> Nenhum serviço jurídico é prestado neste site.</span>
-        <span className={styles.term}><b>2)</b> Sou advogada especializada em direito societário e também falo de contratos e legal design. Aqui apenas divulgo informações que acredito ser importante e também uso o site como um canal de comunicação com pessoas interessadas no meu trabalho.</span>
-        <span className={styles.term}><b>3)</b> Você não precisa pagar nada para usar o este site e usufruir do conteúdo que está aqui.</span>
-        <span className={styles.term}><b>4)</b> O termo Usuário que tratamos aqui refere-se a qualquer pessoa que esteja navegando no site. </span>
-        <span className={styles.term}><b>5)</b> Eu escrevo todos os artigos e materiais disponibilizados para ajudá-los, porém, não permito que você utilize esse material para qualquer outra finalidade que não seja aprender, ok? Caso tenha interesse em divulgar meus textos, entre em contato para que eu autorize expressamente.</span>
-        <span className={styles.term}><b>6)</b> Tomei todas as medidas para que este site seja o mais seguro possível, mas mesmo assim recomendo que, antes de baixar qualquer conteúdo, você instale antivírus e programas de proteção.</span>
-        <span className={styles.term}><b>7)</b> Os Termos de Uso poderão sofrer atualizações, as quais estarão disponíveis no site. Além disso, se eu realizar alguma ação que a lei exija sua autorização, você receberá um aviso antes para poder aceitar ou recusar.</span>
-        <span className={styles.term}><b>8)</b> A titularidade e os direitos relativos ao site pertencem exclusivamente à Graziela Matana. O acesso e a utilização do site e dos conteúdos nele presentes não lhe confere qualquer direito ou prerrogativa sobre propriedade intelectual.</span>
-        <span className={styles.term}><b>9)</b> Você já sabe, mas vale lembrar que todo o conteúdo do site, incluindo artigos, e-books, newsletters, programas, bases de dados, arquivos, textos, imagens, layouts, cabeçalhos, domínios e demais elementos, foram criados, desenvolvido ou cedidos ao controlador do site, sendo, portanto, de propriedade exclusiva GRAZIELA MATANA ADVOCACIA ou a ela licenciado e encontra-se protegido pelas leis brasileiras e tratados internacionais que versam sobre direitos de propriedade intelectual, em especial a Lei n. 9.610/98 (Lei de Direitos Autorais).</span>
-        <span className={styles.term}><b>10)</b> O Usuário que violar as proibições contidas na legislação sobre propriedade intelectual e nestes Termos será responsabilizado, civil e criminalmente, pelas infrações cometidas, além de poder ser impedido de acessar o site.</span>
-        <span className={styles.term}><b>11)</b> Você concorda que a legislação aplicável para fins destes Termos de Uso e das Políticas de Privacidade será a vigente na República Federativa do Brasil e, também que o foro da cidade Caxias do Sul, Rio Grande do Sul, Brasil, será o único competente para dirimir qualquer questão ou controvérsia oriunda ou resultante do uso do site.</span>
+        <h2 className={styles.subtitle}>POLÍTICA DE PRIVACIDADE:</h2>
+        <span className={styles.term}>O presente site, cujo domínio é www.grazielamatanaadvocacia.com.br, é de propriedade, mantido e controlado por GRAZIELA MATANA.</span>
+        <br />
+        <span className={styles.term}><b>1.</b> Como este site protege as informações dos usuários?</span>
+        <span className={styles.term}>Nós terceirizamos essa atividade aos operadores de dados para ter a garantia de excelência e segurança nesses serviços.</span>
+        <br />
+        <span className={styles.term}>As informações trafegadas no site, inclusive provenientes do download dos ebooks são armazenadas e criptografadas pela plataforma WEBFLOW (recomendamos que você leia os termos de uso e políticas de privacidade da WEBFLOW, pois esses documentos não possuem relação com o presente texto).</span>
+        <br />
+        <span className={styles.term}>Demais informações solicitadas nos preenchimentos de formulários, como “Entre em Contaot” e inscrição em Newsletter, serão armazenadas no operador MAILCHIMP, que também é um servidor independente.</span>
+        <br />
+        <span className={styles.term}>E quanto ao WhatsApp? Nós utilizamos a API Whatsapp Web como forma de comunicação. Todas as conversas são armazenadas nos servidores independentes do WhatsApp e também no aparelho de celular coorporativo da GRAZIELA MATANA ADVOCACIA, com o objetivo de possibilitar as respostas aos Usuários e para futuros contatos (recomendamos que você leia os termos de uso e políticas de privacidade do WhatsApp, pois esses documentos não possuem relação com o presente texto).</span>
+        <br />
+        <span className={styles.term}>Você já sabe, mas vale lembrar:</span>
+        <br />
+        <span className={styles.term}>Todos os registros de acesso, conjunto de informações referentes à data e hora de uso de uma determinada aplicação de internet a partir de um determinado endereço IP, serão mantidos pela GRAZIELA MATANA ADVOCACIA, sob sigilo, em ambiente controlado e de segurança da WEBFLOW, pelo prazo mínimo de 6 (seis) meses, por ordem da Lei n. 12.965/2014.</span>
+        <br />
+        <span className={styles.term}><b>2.</b> Quais dados o site coleta?</span>
+        <span className={styles.term}>Vale esclarecer que as informações são fornecidas livremente pelos Usuários.</span>
+        <br />
+        <span className={styles.term}><b>a)</b> Quais são os dados coletados de forma direta? A GRAZIELA MATANA ADVOCACIA solicita diretamente os seguintes dados pessoais: nome, e-mail e telefone (opcional).</span>
+        <br />
+        <span className={styles.term}><b>b)</b> E quais são os dados coletados de forma indireta? O site coleta dados pessoais de forma indireta, por cookies inseridos no seu navegador utilizando o software Google Analytics, a fim de melhorar a experiência do Usuário e cumprir obrigações legais. São coletadas informações, como: endereço IP, fonte de referência, tipo de navegador, duração da visita e páginas visitadas.</span>
+        <br />
+        <span className={styles.term}><b>3.</b> Os meus dados (usuário) são compartilhados?</span>
+        <span className={styles.term}>Somente poderão ter acesso aos dados pessoais dos Usuários os profissionais da equipe de marketing e vendas da GRAZIELA MATANA ADVOCACIA, tendo em vista que tais pessoas gerenciam e acompanham o site, além de responderem às solicitações dos Usuários e entrarem em contato de forma ativa.</span>
+        <br />
+        <span className={styles.term}>Além disso, poderão ter acesso aos dados pessoais os operadores de dados, Webflow, Mailchimp, Whatsapp e Google Analytics, uma vez que tais informações ficam armazenadas em seus servidores. Esclarece-se que tais operadores não possuem autorização para fazer nenhum tipo de tratamento, a não ser o armazenamento.</span>
+        <br />
+        <span className={styles.term}><b>4.</b> Posso solicitar que meus dados sejam excluídos?</span>
+        <span className={styles.term}>Sim. Após atingida a finalidade pretendida pelo tratamento dos dados pessoais ou diante de solicitação do Usuário, todos os seus dados pessoais serão deletados imediatamente e permanentemente do site, exceto os registros de acesso (conjunto de informações referentes à data e hora de uso de uma determinada aplicação de internet a partir de um determinado endereço IP), que serão mantidos, sob sigilo, em ambiente controlado e de segurança, pelo prazo de 6 (seis) meses, nos termos da Lei n. 12.965/2014.</span>
+        <br />
+        <span className={styles.term}><b>5.</b> Quais são meus Direitos como Usuário e Titular dos Dados Pessoais? </span>
+        <span className={styles.term}>Você, titular dos dados pessoais e usuário, tem direito a obter da GRAZIELA MATANA ADVOCACIA, em relação aos dados por ela tratados, a qualquer momento e mediante requisição nos seus canais de comunicação:</span>
+        <br />
+        <span className={styles.term}><b>a)</b> Confirmação da existência de tratamento de dados;</span>
+        <br />
+        <span className={styles.term}><b>b)</b> Acesso aos dados;</span>
+        <br />
+        <span className={styles.term}><b>c)</b> Correção de dados incompletos, inexatos ou desatualizados; </span>
+        <br />
+        <span className={styles.term}><b>d)</b> Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto na Lei 13.709/2018;</span>
+        <br />
+        <span className={styles.term}><b>e)</b> Portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa e observados os segredos comercial e industrial; </span>
+        <br />
+        <span className={styles.term}><b>f)</b> Eliminação dos dados pessoais tratados com o consentimento do titular,exceto nas hipóteses previstas na Lei13.709/2018;</span>
+        <br />
+        <span className={styles.term}><b>g)</b> Informação das entidades públicas e privadas com as quais a GRAZIELA MATANA ADVOCACIA realizou uso compartilhado dedados; </span>
+        <br />
+        <span className={styles.term}><b>h)</b> Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa; </span>
+        <br />
+        <span className={styles.term}><b>i)</b> Revogação do consentimento.</span>
+        <br />
+        <span className={styles.term}><b>6.</b> Poderá ocorrer mudanças nessa política?</span>
+        <br />
+        <span className={styles.term}>Sim. A GRAZIELA MATANA ADVOCACIA poderá unilateralmente adicionar e/ou modificar qualquer cláusula contida nestas Políticas de Privacidade. A versão atualizada valerá para o uso da plataforma realizado a partir de sua publicação. A continuidade de acesso ou utilização do site, depois da divulgação, confirmará a vigência das novas Políticas de Privacidade pelos Usuários. Caso a mudança efetuada necessite de consentimento do Usuário, será apresentada a opção de aceitar de forma livre, inequívoca e informada o novo texto ou de recusá-lo.</span>
+        <br />
+        <span className={styles.term}><b>7.</b> Quais são os Canais disponíveis para contato?</span>
+        <span className={styles.term}>Disponibilizamos os seguintes canais de atendimento para receber todas as comunicações que você, Usuário, desejar fazer, de segunda à sexta-feira, das 09h00min às 18h00min:</span>
+        <br />
+        <span className={styles.term}><b>a)</b> E-mail de contato para o endereço eletrônico grazielamatana@gmail.com.</span>
+        <br />
+        <span className={styles.term}><b>b)</b> Pelo canal “Contato” disponível no site, no qual será necessário preencher o formulário com dados pessoais para contato.</span>
+        <br />
+        <span className={styles.term}><b>c)</b> Pelo telefone (54) 99111-9962 por meio de ligação, SMS ou WhatsApp.</span>
+        <br />
+        <span className={styles.term}>O presente documento foi disponibilizado em 18/10/2022.</span>
         </div>
     </div>
     </>
